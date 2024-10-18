@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>ISL CONNECT</h1>
+        <a href="#" id="home-icon" class="home-icon">🏠</a>
+    </header>
+    <section id="start-screen" class="screen">
+        <div class="logo">
+            <h2>ISL CONNECT</h2>
+        </div>
+        <button onclick="startApp()">Get Started</button>
+    </section>
+    <section id="camera-screen" class="screen hidden">
+        <div class="camera-container">
+            <h3>Camera</h3>
+            <video id="video" autoplay></video>
+        </div>
+        <div class="translation-container">
+            <h3>Translation</h3>
+            <p id="translation-text"></p>
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
